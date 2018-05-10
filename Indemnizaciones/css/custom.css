@@ -26,8 +26,8 @@ h6 {
 }
 
 :root{
-  --background-color-acerca: rgba(211,47,47 ,0.5);
-  --background-color-procedimiento: rgba(25,118,210 ,0.5);
+  --background-color-acerca: rgba(211,47,47 ,0.85);
+  --background-color-procedimiento: rgba(25,118,210 ,0.6);
   --background-color-preparacion-nav: rgba(251,140,0 ,0.7);
   --background-color-tipos: rgb(133,2,2);
   --background-color-tipos-nav: rgba(133,2,2,0.7);
@@ -166,18 +166,33 @@ header nav.mainnav ul li a.active{
   100% { left: 35%; opacity: 0; }
 }
 
+.texto p{
+  font-size: 1.2rem;
+}
 
 div#acerca{
-  padding-top: 2rem;
-  background-color: var(--background-color-acerca);
+  background: url("../img/homebackground5.jpg") no-repeat;
+  background-size: cover;
   color: rgba(239,235,233 ,1);
 }
+section.acerca {
+    background-color: var(--background-color-acerca);
+    background-position: center;
+  }
+section div.content{
+    padding-top: 2rem;
+}
+
+
 div#procedimiento{
-  padding-top: 2rem;
-  background-color: var(--background-color-procedimiento);
+  background: url("../img/homebackground6.jpg") no-repeat;
+  background-size: cover;
   color: rgba(239,235,233 ,1);
 }
 
+section.procedimiento{
+  background-color: var(--background-color-procedimiento);
+}
 
 footer{
   background-color: rgba(33,33,33 ,0.8);

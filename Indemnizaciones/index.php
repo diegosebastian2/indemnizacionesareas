@@ -81,11 +81,11 @@
         <div id="acerca" class="acerca">
 
             <section class="acerca" >
-              <div class="container" >
+              <div class="container content" >
                 <div class="row align-items-center">
                   <div class="col-12">
-                    <div class="p-5">
-                      <h2 class="h2">QUIENES SOMOS?</h2>
+                    <div class="p-5 texto">
+                      <h2 class="h2 pb-4">QUIENES SOMOS?</h2>
                       <p>UN ESTUDIO JURIDICO ESPECIALIZADO en DAÑOS Y PERJUICIOS, defensa del consumidor, ACCIDENTES DE TRANSITO Y DERECHO AERONÁUTICO
                         Los viajes de negocios y/o de placer, cada vez con mayor frecuencia, suelen ser opacados y en muchos casos arruinados por situaciones ajenas e inesperadas que las compañías aéreas suelen provocar. Entre ellas las más comunes son vuelos con demoras, cancelaciones, pérdida de equipaje y/o hasta el robo del mismo. Obviamente, dichas compañías suelen negar los hechos o ampararse en excusas tales como “malas condiciones climáticas”, “problemas mecánicos”, etc, con el fin de evitar pagar al usuario la indemnización correspondiente por el perjuicio ocasionado directamente por ellas.</p>
                       <p>La finalidad de “Indemnizacionesaéreas.com” es que puedas recibir el resarcimiento económico que te corresponde como consecuencia de las situaciones ocasionadas por estas compañías, realizando para tal fin, todos los reclamos extrajudiciales y/o judiciales necesarios en el menor tiempo posible.</p>
@@ -102,11 +102,11 @@
         <div id="procedimiento" class="procedimiento">
 
             <section class="procedimiento" >
-              <div class="container" >
+              <div class="container content" >
                 <div class="row align-items-center">
                   <div class="col-12">
-                    <div class="p-5">
-                      <h2 class="h2">Como es el procedimiento del reclamo?</h2>
+                    <div class="p-5 texto">
+                      <h2 class="h2 pb-4">Como es el procedimiento del reclamo?</h2>
                         <p>Si debido a circunstancias operativas, técnicas, comerciales y hasta en algunos casos climáticas, la aerolínea demora y/o cancela tu vuelo en más de CUATRO (4) horas, te prohíbe el embarque aludiendo que no dispone de espacio previamente contratado y confirmado por sobreventa de pasajes, o no te entrega tu equipaje en tiempo y forma, y/o te causa la pérdida de un vuelo de conexión para el que tenías una reserva confirmada o perdida de estadía en tu lugar de destino, la Compañía Aérea deberá indemnizarte por todos los daños y perjuicios ocasionados, incluyendo no solo los gastos incurridos , sino también el daño moral causado.</p>
                         <p>La indemnización por la que vamos a trabajar debe contemplar también la pérdida material y de tiempo sufrida por la pérdida de vida irrepetible.</p>
                         <p>La vía para pedir la indemnización es primero una mediación extrajudicial y posteriormente la demanda judicial en el menor tiempo posible!</p>
