@@ -27,9 +27,9 @@ h6 {
 
 :root{
   --background-color-home: rgba(238,238,238 ,0.5);
-  --background-color-acerca: rgba(211,47,47 ,0.8);
-  --background-color-procedimiento: rgba(25,118,210 ,0.6);
-  --background-color-contacto: rgba(245,245,245,0.3);
+  --background-color-acerca: rgba(211,47,47 ,0.9);
+  --background-color-procedimiento: rgba(25,118,210 ,0.8);
+  --background-color-contacto: rgba(245,245,245,0.6);
 
   --background-color-tipos: rgb(133,2,2);
   --background-color-tipos-nav: rgba(133,2,2,0.7);
@@ -107,11 +107,12 @@ div#home{
 .home{
   position: relative;
 
+
 }
 
 .slider{
   top: 15vh;
-  height: 20vh;
+  height: 8rem;
   position: absolute;
   display: block;
   width: 100%;
@@ -178,6 +179,22 @@ div#home{
   100% { left: 25%; opacity: 0; }
 }
 
+.botonContacto{
+  top: calc(15vh + 8rem + 10vh) ;
+  position: absolute;
+  background-color: rgba(33,33,33 ,0.8);
+  margin-left: calc(50vw - 10rem);
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  border: 1px solid rgba(245,245,245 ,1);
+}
+
+.botonContacto a{
+  color: rgba(245,245,245 ,1);
+  padding: 1rem;
+}
+
 .texto p{
   font-size: 1.2rem;
 }
@@ -210,20 +227,31 @@ section.procedimiento{
 div#contacto{
   background: url("../img/homebackground4.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
   color: rgba(33,33,33 ,1);
 }
 
 section.contacto{
+  background-color: var(--background-color-contacto);
+}
+
+section.contacto div.contacto{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  background-color: var(--background-color-contacto);
+  align-items: top;
+
+}
+
+div.contacto div.texto{
+  width: 40%;
 }
 
 .maps{
-padding: 5rem;
+  width: 30vw;
+  height: 40vh;
+
 }
 
 footer{
