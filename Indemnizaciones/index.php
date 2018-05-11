@@ -19,13 +19,13 @@
         <link rel="stylesheet" href="css/custom.css">
     </head>
     <body>
-      <div class="content" id="content">
+      <div id="content">
         <header class="mainhead sticky-top" >
 
           <div class="logo">
 
             <div class="logoimg">
-              <a href="index.html">
+              <a href="#content">
                 <h1>Indemnizacionesaereasya</h1>
               </a>
             </div>
@@ -40,7 +40,7 @@
 
           <nav class="mainnav align-items-center" aria-label="Site navigation">
               <ul class="pagination justify-content-center mb-0 nav">
-                <li class="page-item"><a class="page-link border-0 active" href="#inicio">Inicio</a></li>
+                <li class="page-item"><a class="page-link border-0 " href="#content">Inicio</a></li>
                 <li class="page-item"><a class="page-link border-0 " href="#acerca">Quienes Somos</a></li>
                 <li class="page-item"><a class="page-link border-0 " href="#procedimiento">Operatoria del reclamo</a></li>
                 <li class="page-item"><a class="page-link border-0 " href="#contacto">Contacto</a></li>
@@ -51,8 +51,12 @@
 
         <div id="home" >
 
+          <div class="home">
+
 
             <div class="slider">
+
+
               <div class="slide1">
                 <p class="item-slide">¿Equipaje perdido y/o dañado?</p>
                 <p class="item-slide">¿Sobreventa de pasajes (overbooking)?</p>
@@ -69,13 +73,14 @@
                 <p class="item-slide">TENES DERCHO A SER INDEMNIZADO!</p>
                 <p class="item-slide">...y nosotros nos ocupamos de ello!</p>
               </div>
-
-
             </div>
 
 
 
 
+
+
+            </div>
         </div>
 
         <div id="acerca" class="acerca">
@@ -85,7 +90,7 @@
                 <div class="row align-items-center">
                   <div class="col-12">
                     <div class="p-5 texto">
-                      <h2 class="h2 pb-4">QUIENES SOMOS?</h2>
+                      <h2 class="h2 pb-4">Quienes somos?</h2>
                       <p>UN ESTUDIO JURIDICO ESPECIALIZADO en DAÑOS Y PERJUICIOS, defensa del consumidor, ACCIDENTES DE TRANSITO Y DERECHO AERONÁUTICO
                         Los viajes de negocios y/o de placer, cada vez con mayor frecuencia, suelen ser opacados y en muchos casos arruinados por situaciones ajenas e inesperadas que las compañías aéreas suelen provocar. Entre ellas las más comunes son vuelos con demoras, cancelaciones, pérdida de equipaje y/o hasta el robo del mismo. Obviamente, dichas compañías suelen negar los hechos o ampararse en excusas tales como “malas condiciones climáticas”, “problemas mecánicos”, etc, con el fin de evitar pagar al usuario la indemnización correspondiente por el perjuicio ocasionado directamente por ellas.</p>
                       <p>La finalidad de “Indemnizacionesaéreas.com” es que puedas recibir el resarcimiento económico que te corresponde como consecuencia de las situaciones ocasionadas por estas compañías, realizando para tal fin, todos los reclamos extrajudiciales y/o judiciales necesarios en el menor tiempo posible.</p>
@@ -116,6 +121,26 @@
                   </div>
                 </div>
               </div>
+            </section>
+        </div>
+
+        <div id="contacto" class="contacto">
+
+            <section class="contacto" >
+
+                  <div class="p-5 texto">
+                      <h2 class="h2 pb-4">Contactanos</h2>
+                        <p>Dirección:</p>
+                        <p>Lavalle 1290 Piso 12 CP 1048 (CABA)</p>
+                        <br>
+                        <br>
+                        <p>Cel: (011) 155-479-0213.</p>
+                        <br>
+                        <p>Cel: (02324) 1569-3961.</p>
+                    </div>
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0594182075733!2d-58.38723248477043!3d-34.60265898045974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac66eff3dd9%3A0x4eef77fc4871345!2sPiso+12%2C+Lavalle+1290%2C+C1048AAF+CABA!5e0!3m2!1ses-419!2sar!4v1525978951892" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
             </section>
         </div>
 

@@ -26,9 +26,11 @@ h6 {
 }
 
 :root{
-  --background-color-acerca: rgba(211,47,47 ,0.85);
+  --background-color-home: rgba(238,238,238 ,0.5);
+  --background-color-acerca: rgba(211,47,47 ,0.8);
   --background-color-procedimiento: rgba(25,118,210 ,0.6);
-  --background-color-preparacion-nav: rgba(251,140,0 ,0.7);
+  --background-color-contacto: rgba(245,245,245,0.3);
+
   --background-color-tipos: rgb(133,2,2);
   --background-color-tipos-nav: rgba(133,2,2,0.7);
   --background-color-variedades: rgba(62,39,35 ,1);
@@ -36,14 +38,7 @@ h6 {
 }
 
 #content{
-  background-color: rgba(121,85,72 ,1);
-
-}
-
-div#home{
-  height: 80vh;
-  background: url("../img/homebackground4.jpg") no-repeat;
-  background-size: cover;
+  background-color: rgba(26,35,126 ,1);
 
 }
 
@@ -68,17 +63,16 @@ div#home{
 }
 
 .logoimg{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background: url("../img/despegue.png");
     background-size: cover;
     text-indent: -5000px;
     margin: 0;
-
 }
 
 .logotext a h1{
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: rgba(238,238,238 ,1);
 
   margin: 0;
@@ -86,13 +80,12 @@ div#home{
 
 
 header nav.mainnav ul li a{
-  padding: 2rem;
-  font-size: 1.5rem;
+  padding: 1.5rem;
+  font-size: 1rem;
   transition: 0.5s;
   color: rgba(238,238,238 ,1);
   background-color: var(--background-color-home-nav);
 }
-
 
 header nav.mainnav ul li a:hover{
   background-color: var(--background-color-home-nav);
@@ -102,8 +95,27 @@ header nav.mainnav ul li a:hover{
 header nav.mainnav ul li a.active{
   color: rgba(211,47,47 ,1);
 }
-.slider{
+
+div#home{
+  height: 80vh;
+  background: url("../img/homebackground2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
+
+}
+.home{
+  position: relative;
+
+}
+
+.slider{
+  top: 15vh;
+  height: 20vh;
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-color: rgba(33,33,33 ,0.5);
 }
 
 /*div.slider div p{
@@ -114,14 +126,15 @@ header nav.mainnav ul li a.active{
 .slide2,
 .slide3,
 .slide4 {
+
   font-family:'RoboR';
-  color: rgba(33,33,33 ,1);
+  color: rgba(245,245,245 ,1);
 	position: absolute;
   display: block;
-	top: 10vh;
-  width: 50vw;
+  padding-top: 0.5rem;
+  width: 70vw;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.0rem;
 
 	animation-duration: 15s;
 	animation-timing-function: ease-in-out;
@@ -135,7 +148,6 @@ header nav.mainnav ul li a.active{
 	animation-name: anim-2;
 }
 .slide3{
-  font-size: 2.5rem;
 	animation-name: anim-3;
 }
 .slide4{
@@ -144,26 +156,26 @@ header nav.mainnav ul li a.active{
 
 @keyframes anim-1 {
 	0%, 3% { left: 0%; opacity: 0; }
-  3%, 20% { left: 10%; opacity: 1; }
-  28%, 100% { left: 35%; opacity: 0; }
+  3%, 20% { left: 15%; opacity: 1; }
+  28%, 100% { left: 25%; opacity: 0; }
 }
 
 @keyframes anim-2 {
 	0%, 20% { left: 0%; opacity: 0; }
-  30%, 45% { left: 10%; opacity: 1; }
-  53%, 100% { left: 35%; opacity: 0; }
+  30%, 45% { left: 15%; opacity: 1; }
+  53%, 100% { left: 25%; opacity: 0; }
 }
 
 @keyframes anim-3 {
 	0%, 45% { left: 0%; opacity: 0; }
-  55%, 70% { left: 10%; opacity: 1; }
-  78%, 100% { left: 35%; opacity: 0; }
+  55%, 70% { left: 15%; opacity: 1; }
+  78%, 100% { left: 25%; opacity: 0; }
 }
 
 @keyframes anim-4 {
 	0%, 70% { left: 0%; opacity: 0; }
-  80%, 95% { left: 10%; opacity: 1; }
-  100% { left: 35%; opacity: 0; }
+  80%, 95% { left: 15%; opacity: 1; }
+  100% { left: 25%; opacity: 0; }
 }
 
 .texto p{
@@ -173,11 +185,11 @@ header nav.mainnav ul li a.active{
 div#acerca{
   background: url("../img/homebackground5.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
   color: rgba(239,235,233 ,1);
 }
 section.acerca {
     background-color: var(--background-color-acerca);
-    background-position: center;
   }
 section div.content{
     padding-top: 2rem;
@@ -187,11 +199,31 @@ section div.content{
 div#procedimiento{
   background: url("../img/homebackground6.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
   color: rgba(239,235,233 ,1);
 }
 
 section.procedimiento{
   background-color: var(--background-color-procedimiento);
+}
+
+div#contacto{
+  background: url("../img/homebackground4.jpg") no-repeat;
+  background-size: cover;
+  color: rgba(33,33,33 ,1);
+}
+
+section.contacto{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color-contacto);
+}
+
+.maps{
+padding: 5rem;
 }
 
 footer{
@@ -247,27 +279,15 @@ footer{
 }
 
 /*l*/
-/*
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  header.mainhead {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-  }
-  div header.mainhead .mainhead-content .mainhead-heading {
-    font-size: 4rem;
-  }
-  div header.mainhead .mainhead-content .mainhead-subheading {
-    font-size: 2rem;
-  }
-
-  div#home nav.mainnav ul.nav li.page-item a.page-link{
-    font-size: 2rem;
-    padding: .5rem .75rem;
-  }
-
-  div.nohome nav.subnav ul.nav li a.page-link{
-    font-size: 2rem;
-    padding: .5rem .75rem;
+  .logoimg{
+      width: 60px;
+      height: 60px;
+      background: url("../img/despegue.png");
+      background-size: cover;
+      text-indent: -5000px;
+      margin: 0;
   }
 
 }
