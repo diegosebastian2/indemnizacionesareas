@@ -183,11 +183,11 @@ div#home{
   top: calc(15vh + 8rem + 10vh) ;
   position: absolute;
   background-color: rgba(33,33,33 ,0.8);
-  margin-left: calc(50vw - 10rem);
+  margin-left: calc(50vw - 8rem);
   display: block;
   text-align: center;
-  font-size: 3rem;
-  border: 1px solid rgba(245,245,245 ,1);
+  font-size: 2rem;
+  /*border: 1px solid rgba(245,245,245 ,1);*/
 }
 
 .botonContacto a{
@@ -249,8 +249,8 @@ div.contacto div.texto{
 }
 
 .maps{
-  width: 30vw;
-  height: 40vh;
+  width: 40vw;
+  height: 50vh;
 
 }
 
