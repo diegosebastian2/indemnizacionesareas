@@ -70,7 +70,7 @@
                 <p class="item-slide">¿Tuviste lesiones a bordo de la aeronave?</p>
               </div>
               <div class="slide4">
-                <p class="item-slide">¡TENES DERCHO A SER INDEMNIZADO!</p>
+                <p class="item-slide">¡TENES DERECHO A SER INDEMNIZADO!</p>
                 <p class="item-slide">¡Y nosotros nos ocupamos de ello!</p>
               </div>
             </div>
@@ -88,7 +88,7 @@
               <div class="container content" >
                   <div class="px-5 pt-5 texto">
                     <h2 class="h2 pb-4">¿Quienes somos?</h2>
-                    <p>UN ESTUDIO JURIDICO ESPECIALIZADO en DAÑOS Y PERJUICIOS, defensa del consumidor, ACCIDENTES DE TRANSITO Y DERECHO AERONÁUTICO
+                    <p>UN ESTUDIO JURIDICO ESPECIALIZADO en DAÑOS Y PERJUICIOS, DEFENSA DEL CONSUMIDOR, ACCIDENTES DE TRANSITO Y DERECHO AERONÁUTICO.
                       Los viajes de negocios y/o de placer, cada vez con mayor frecuencia, suelen ser opacados y en muchos casos arruinados por situaciones ajenas e inesperadas que las compañías aéreas suelen provocar. Entre ellas las más comunes son vuelos con demoras, cancelaciones, pérdida de equipaje y/o hasta el robo del mismo. Obviamente, dichas compañías suelen negar los hechos o ampararse en excusas tales como “malas condiciones climáticas”, “problemas mecánicos”, etc, con el fin de evitar pagar al usuario la indemnización correspondiente por el perjuicio ocasionado directamente por ellas.</p>
                   </div>
 
@@ -98,9 +98,9 @@
                   <div class="imagen pt-5">
                     <img class="" src="img/justice.svg" alt="">
                   </div>
-                  <div class="p-5 texto">
+                  <div class="pb-5 px-5 texto">
 
-                    <p>La finalidad de Indemnizacionesaereas.com es que puedas recibir el resarcimiento económico que te corresponde como consecuencia de las situaciones ocasionadas por estas compañías, realizando para tal fin, todos los reclamos extrajudiciales y/o judiciales necesarios en el menor tiempo posible.</p>
+                    <p>La finalidad de Indemnizacionesaereasya.com es que puedas recibir el resarcimiento económico que te corresponde como consecuencia de las situaciones ocasionadas por estas compañías, realizando para tal fin, todos los reclamos extrajudiciales y/o judiciales necesarios en el menor tiempo posible.</p>
                     <p>La experiencia que tenemos y brindamos, en este ámbito del derecho aeronáutico, nos permite fundamentar con más recursos que la que puede tener una persona común y corriente.</p>
                     <p>Y lo más importante es que, no solo te ahorramos tramites interminables y el estrés que ocasionan estos reclamos, sino que NO PAGAS HONORARIOS HASTA TANTO HAYAS RECIBIDO TU MERECIDA INDEMNIZACIÓN.</p>
                     <p>No cobramos gastos previos. </p>
@@ -117,7 +117,7 @@
               <div class="container content">
 
                   <div class="px-5 pt-5 texto">
-                      <h2 class="h2 pb-4">Como es el procedimiento del reclamo?</h2>
+                      <h2 class="h2 pb-4">¿Como es el procedimiento del reclamo?</h2>
                         <p>Si debido a circunstancias operativas, técnicas, comerciales y hasta en algunos casos climáticas, la aerolínea demora y/o cancela tu vuelo en más de CUATRO (4) horas, te prohíbe el embarque aludiendo que no dispone de espacio previamente contratado y confirmado por sobreventa de pasajes, o no te entrega tu equipaje en tiempo y forma, y/o te causa la pérdida de un vuelo de conexión para el que tenías una reserva confirmada o perdida de estadía en tu lugar de destino, la Compañía Aérea deberá indemnizarte por todos los daños y perjuicios ocasionados, incluyendo no solo los gastos incurridos , sino también el daño moral causado.</p>
                         <p>La indemnización por la que vamos a trabajar debe contemplar también la pérdida material y de tiempo sufrida por la pérdida de vida irrepetible.</p>
                         <p>La vía para pedir la indemnización es primero una mediación extrajudicial y posteriormente la demanda judicial en el menor tiempo posible!</p>
@@ -137,11 +137,10 @@
               <div class="container contacto">
                   <div class="pt-5 pl-5 texto">
                       <h2 class="h2 pb-4">Contactanos</h2>
-                        <p>Dirección:
-                        Lavalle 1290 Piso 12 CP 1048 (CABA)</p>
-                        <p>Email: consultas@indemnizacionesaereasya.com</p>
-                        <p>Cel: (011) 155-479-0213.</p>
-                        <p>Cel: (02324) 1569-3961.</p>
+                        <p><span class="lnr lnr-map-marker"></span> Lavalle 1290 Piso 12 CP 1048 (CABA)</p>
+                        <p><span class="lnr lnr-envelope"></span> consultas@indemnizacionesaereasya.com</p>
+                        <p><span class="lnr lnr-smartphone"></span> (011) 155-479-0213.</p>
+                        <p><span class="lnr lnr-smartphone"></span> (02324) 1569-3961.</p>
                     </div>
                     <div class="py-5 maps">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0594182075733!2d-58.38723248477043!3d-34.60265898045974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac66eff3dd9%3A0x4eef77fc4871345!2sPiso+12%2C+Lavalle+1290%2C+C1048AAF+CABA!5e0!3m2!1ses-419!2sar!4v1525978951892" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -195,6 +194,8 @@
 
 
                 $('nav ul li a').attr("data-scroll");
+
+                $('link[type*=icon]').detach().appendTo('head');
 
         });
 
