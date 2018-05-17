@@ -11,6 +11,7 @@
 
 body {
   font-family:'RoboR';
+  font-size: 16px;
   /*font-size: 10px !important;*/
 }
 
@@ -28,13 +29,9 @@ h6 {
 :root{
   --background-color-home: rgba(238,238,238 ,0.5);
   --background-color-acerca: rgba(211,47,47 ,0.9);
-  --background-color-procedimiento: rgba(25,118,210 ,0.8);
   --background-color-contacto: rgba(245,245,245,0.6);
 
-  --background-color-tipos: rgb(133,2,2);
-  --background-color-tipos-nav: rgba(133,2,2,0.7);
-  --background-color-variedades: rgba(62,39,35 ,1);
-  --background-color-variedades-nav: rgba(62,39,35 ,0.7);
+
 }
 
 #content{
@@ -51,7 +48,10 @@ h6 {
     justify-content: space-between;
     padding: 2px 100px;
     align-items: center;
-    background-color: rgba(33,33,33 ,0.5)
+    background-color: rgba(33,33,33 ,0.5);
+    position: sticky;
+    top:0;
+    z-index: 100;
 
 }
 
@@ -63,8 +63,8 @@ h6 {
 }
 
 .logoimg{
-    width: 60px;
-    height: 60px;
+    width: 4em;
+    height: 4em;
     background: url("../img/despegue.png");
     background-size: cover;
     text-indent: -5000px;
@@ -72,7 +72,7 @@ h6 {
 }
 
 .logotext a h1{
-  font-size: 1rem;
+  font-size: 1em;
   color: rgba(238,238,238 ,1);
 
   margin: 0;
@@ -80,15 +80,14 @@ h6 {
 
 
 header nav.mainnav ul li a{
-  padding: 1.5rem;
-  font-size: 1rem;
+  padding: 1.5em;
+  font-size: 1em;
   transition: 0.5s;
   color: rgba(238,238,238 ,1);
-  background-color: var(--background-color-home-nav);
+  background-color: inherit;
 }
 
 header nav.mainnav ul li a:hover{
-  background-color: var(--background-color-home-nav);
   color: rgba(211,47,47 ,1);
 }
 
@@ -112,7 +111,7 @@ div#home{
 
 .slider{
   top: 15vh;
-  height: 8rem;
+  height: 9em;
   position: absolute;
   display: block;
   width: 100%;
@@ -132,10 +131,10 @@ div#home{
   color: rgba(245,245,245 ,1);
 	position: absolute;
   display: block;
-  padding-top: 0.5rem;
+  padding-top: 0.5em;
   width: 70vw;
   text-align: center;
-  font-size: 2.0rem;
+  font-size: 2.0em;
 
 	animation-duration: 15s;
 	animation-timing-function: ease-in-out;
@@ -180,24 +179,22 @@ div#home{
 }
 
 .botonContacto{
-  top: calc(15vh + 8rem + 10vh) ;
+  top: calc(15vh + 8em + 10vh) ;
   position: absolute;
   background-color: rgba(33,33,33 ,0.8);
-  margin-left: calc(50vw - 8rem);
+  margin-left: calc(50vw - 4em);
   display: block;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2em;
   /*border: 1px solid rgba(245,245,245 ,1);*/
 }
 
 .botonContacto a{
   color: rgba(245,245,245 ,1);
-  padding: 1rem;
+  padding: 1em;
 }
 
-.texto p{
-  font-size: 1.2rem;
-}
+
 
 div#acerca{
   background: url("../img/homebackground5.jpg") no-repeat;
@@ -206,10 +203,39 @@ div#acerca{
   color: rgba(239,235,233 ,1);
 }
 section.acerca {
-    background-color: var(--background-color-acerca);
+    background-color: rgba(211,47,47 ,0.9);
   }
-section div.content{
-    padding-top: 2rem;
+section.acerca div.content,
+section.procedimiento div.content{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+
+}
+section.acerca div div.texto,
+section.procedimiento div div.texto{
+  width: 70%;
+}
+  .texto p{
+    font-size: 1.2em;
+  }
+section.acerca div div.imagen,
+section.procedimiento div div.imagen{
+  width: 30%;
+  /*background: url(../img/justice.svg) no-repeat center center;
+  background-size: contain;*/
+}
+
+section.acerca div div.imagen img,
+section.procedimiento div div.imagen img{
+  width: 100%;
+  filter: invert(0.8);
+  -webkit-filter: invert(0.8);
+  -ms-filter: invert(80%);
+  -o-filter: invert(0.8);
 }
 
 
@@ -221,7 +247,7 @@ div#procedimiento{
 }
 
 section.procedimiento{
-  background-color: var(--background-color-procedimiento);
+  background-color: rgba(25,118,210 ,0.8);
 }
 
 div#contacto{
@@ -232,76 +258,103 @@ div#contacto{
 }
 
 section.contacto{
-  background-color: var(--background-color-contacto);
+  background-color: rgba(245,245,245,0.6);
 }
 
 section.contacto div.contacto{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: top;
 
 }
 
 div.contacto div.texto{
-  width: 40%;
+  width: 50%;
 }
 
 .maps{
-  width: 40vw;
+  width: 30vw;
   height: 50vh;
 
 }
 
 footer{
-  background-color: rgba(33,33,33 ,0.8);
+  background-color: rgba(33,33,33 ,0.9);
+  font-size: 1.1em;
 }
 
-/*
+
 @media (max-width: 575.98px) {
-  div header.mainhead {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  body{
+    font-size: 12px;
   }
-  div#home nav.mainnav ul.nav li.page-item a.page-link{
-    font-size: 1rem;
-    padding: .10rem .10rem;
+  .mainhead{
+      flex-direction: column;
+      padding: 2px 2px;
+      position: relative;
+
   }
-  div.nohome nav.subnav ul.nav li a.page-link{
-    font-size: 1rem;
-    padding: .10rem .10rem;
+  .logo{
+        padding: 1em;
   }
+  .botonContacto{
+        display: none;
+  }
+  .slider{
+        height: 20em;
+  }
+  section.acerca div div.imagen,
+  section.procedimiento div div.imagen{
+        display: none;
+  }
+  section.acerca div div.texto,
+  section.procedimiento div div.texto{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+  }
+  section.acerca div.content,
+  section.procedimiento div.content{
+    padding: 0;
+    margin: 0;
+  }
+  section.contacto div.contacto{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  div.contacto div.texto{
+    width: 100%;
+    font-size: 0.8em;
+
+  }
+  .maps{
+    width: 90%;
+    padding-bottom:0;
+
+  }
+  .botonContacto{
+    display: none;
+  }
+
 
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  header.mainhead {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-  }
-  div#home nav.mainnav ul.nav li.page-item a.page-link{
-    font-size: 1rem;
-    padding: .25rem .25rem;
-  }
-  div.nohome nav.subnav ul.nav li a.page-link{
-    font-size: 1rem;
-    padding: .25rem .25rem;
-  }
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  header.mainhead {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+  .slider{
+    height: 12em;
   }
-
-  div#home nav.mainnav ul.nav li.page-item a.page-link{
-    font-size: 1.5rem;
-  }
-  div.nohome nav.subnav ul.nav li a.page-link{
-    font-size: 1.5rem;
-    padding: .25rem .5rem;
+  .botonContacto{
+    display: block;
   }
 
 }
@@ -317,6 +370,10 @@ footer{
       text-indent: -5000px;
       margin: 0;
   }
+  .botonContacto{
+    display: block;
+  }
+
 
 }
 
@@ -324,21 +381,21 @@ footer{
 /*
 @media (min-width: 1200px) {
   div header.mainhead {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-top: 2em;
+    padding-bottom: 4em;
   }
   div header.mainhead .mainhead-content .mainhead-heading {
-    padding-top: 1rem;
-    font-size: 5rem;
+    padding-top: 1em;
+    font-size: 5em;
   }
   div header.mainhead .mainhead-content .mainhead-subheading {
-    font-size: 3rem;
-    padding-bottom: 2rem;
+    font-size: 3em;
+    padding-bottom: 2em;
   }
 
   div#home nav.mainnav ul.nav li.page-item a.page-link{
-    font-size: 1.5rem;
-    padding: .5rem .75rem;
+    font-size: 1.5em;
+    padding: .5rem .75em;
   }
 
 }
