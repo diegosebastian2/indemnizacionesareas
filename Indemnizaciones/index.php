@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Indemnizaciones aereas</title>
-        <meta name="description" content="">
+        <meta name="description" content="Indemnizaciones Aereas">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
@@ -27,12 +27,14 @@
             <div class="logoimg">
               <a href="#content">
                 <h1>Indemnizacionesaereasya</h1>
+                <h1>Indemnizaciones Aereas</span></h1>
               </a>
             </div>
 
             <div class="logotext">
               <a href="index.html">
-                <h1>Indemnizaciones<span class="aereas">Aereas</span><span class="ya">Ya</span></h1>
+                <h1>Indemnizaciones<span class="aereas">Aereas</span><span class="ya">Ya.com</span></h1>
+
               </a>
             </div>
 
@@ -93,10 +95,10 @@
                   </div>
 
                   <div class="imagen pt-5">
-                    <img class="" src="img/maletin.svg" alt="">
+                    <img class="" src="img/maletin.svg" alt="acerca">
                   </div>
                   <div class="imagen pt-5">
-                    <img class="" src="img/justice.svg" alt="">
+                    <img class="" src="img/justice.svg" alt="legales">
                   </div>
                   <div class="pb-5 px-5 texto">
 
@@ -125,7 +127,7 @@
                         <p>Haga valer sus derechos y el de su familia.</p>
                   </div>
                   <div class="imagen pt-5">
-                    <img class="" src="img/libro.svg" alt="">
+                    <img class="" src="img/libro.svg" alt="procedimiento">
                   </div>
                 </div>
             </section>
@@ -139,8 +141,8 @@
                       <h2 class="h2 pb-4">Contactanos</h2>
                         <p><span class="lnr lnr-map-marker"></span> Lavalle 1290 Piso 12 CP 1048 (CABA)</p>
                         <p><span class="lnr lnr-envelope"></span> consultas@indemnizacionesaereasya.com</p>
-                        <p><span class="lnr lnr-smartphone"></span> (011) 155-479-0213.</p>
-                        <p><span class="lnr lnr-smartphone"></span> (02324) 1569-3961.</p>
+                        <p><span class="lnr lnr-smartphone"></span> (011) 155-479-0213</p>
+                        <p><span class="lnr lnr-smartphone"></span> (02324) 1569-3961</p>
                     </div>
                     <div class="py-5 maps">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0594182075733!2d-58.38723248477043!3d-34.60265898045974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac66eff3dd9%3A0x4eef77fc4871345!2sPiso+12%2C+Lavalle+1290%2C+C1048AAF+CABA!5e0!3m2!1ses-419!2sar!4v1525978951892" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -151,9 +153,13 @@
 
       </div>
     <!-- Footer -->
-    <footer class="py-2">
-        <p class="text-center text-white small">Copyright &copy; Indemnizacionesaereasya.com 2018</p>
+    <footer class="py-2 text-center">
+        <!-- Start of CuterCounter Code -->
+        <a class="text-center text-white small" href="http://www.cutercounter.com/spanish/" target="_blank"><img src="http://www.cutercounter.com/hit.php?id=10591&nd=4&style=52" border="0" alt="contador web"></a>
+<!-- End of CuterCounter Code -->
       <!-- /.container -->
+        <p class="pt-2 text-center text-white small">Copyright &copy; Indemnizacionesaereasya.com 2018</p>
+
     </footer>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -195,7 +201,7 @@
 
                 $('nav ul li a').attr("data-scroll");
 
-                $('link[type*=icon]').detach().appendTo('head');
+                /*$('link[type*=icon]').detach().appendTo('head');*/
 
         });
 
