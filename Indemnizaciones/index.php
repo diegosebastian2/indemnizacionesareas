@@ -137,13 +137,46 @@
 
             <section class="contacto" >
               <div class="container contacto">
-                  <div class="pt-5 pl-5 texto">
-                      <h2 class="h2 pb-4">Contactanos</h2>
+                    <div class="py-5 pl-5 texto">
+                        <h2 class="h2 pb-2">Contactanos</h2>
                         <p><span class="lnr lnr-map-marker"></span> Lavalle 1290 Piso 12 CP 1048 (CABA)</p>
                         <p><span class="lnr lnr-envelope"></span> consultas@indemnizacionesaereasya.com</p>
-                        <p><span class="lnr lnr-smartphone"></span> (011) 155-479-0213</p>
-                        <p><span class="lnr lnr-smartphone"></span> (02324) 1569-3961</p>
+                        <p><span class="lnr lnr-smartphone"></span> (011) 155-479-0213 (whatsapp)</p>
+                        <p><span class="lnr lnr-smartphone"></span> (02324) 1569-3961 (whatsapp)</p>
+                        <form action="mail.php" method="POST" id="form1">
+                          <ul class="form-style-1">
+                              <li>
+                                  <div id="nombre-group" class="form-group">
+                                    <label>Nombre <span class="required">*</span></label>
+                                    <input type="text" name="nombre" class="field-long form-control" />
+                                      <!-- errors will go here -->
+                                  </div>
+                              </li>
+                              <li>
+                                <div id="nombre-mail" class="form-group">
+                                  <label>Email <span class="required">*</span></label>
+                                  <input type="email" name="mail" class="field-long form-control" />
+                                    <!-- errors will go here -->
+                                </div>
+                              </li>
+                              <li>
+                                <div id="telefono-group" class="form-group">
+                                  <label>Telefono </label>
+                                  <input type="text" name="telefono" class="field-long form-control" />
+                                    <!-- errors will go here -->
+                                </div>
+                              </li>
+                              <li>
+                                  <label>Tu Consulta</label>
+                                  <textarea name="consulta" id="consulta" class="field-long field-textarea"></textarea>
+                              </li>
+                              <li>
+                                  <button type="submit" class="btn btn-light">Enviar <span class="fa fa-arrow-right"></span></button>
+                              </li>
+                          </ul>
+                        </form>
                     </div>
+
                     <div class="py-5 maps">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0594182075733!2d-58.38723248477043!3d-34.60265898045974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac66eff3dd9%3A0x4eef77fc4871345!2sPiso+12%2C+Lavalle+1290%2C+C1048AAF+CABA!5e0!3m2!1ses-419!2sar!4v1525978951892" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
@@ -173,7 +206,15 @@
         <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/jquery.zoom.min.js"></script>
         <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
         <script>
         $(document).ready(function(){
 
@@ -201,7 +242,76 @@
 
                 $('nav ul li a').attr("data-scroll");
 
-                /*$('link[type*=icon]').detach().appendTo('head');*/
+                // process the form
+                $('#form1').submit(function(event) {
+
+                    $('.form-group').removeClass('has-error'); // remove the error class
+                    $('.help-block').remove(); // remove the error text
+                    // get the form data
+                    // there are many ways to get this data using jQuery (you can use the class or id also)
+                    var formData = {
+                        'nombre'      : $('input[name=nombre]').val(),
+                        'mail'        : $('input[name=mail]').val(),
+                        'telefono'    : $('input[name=telefono]').val(),
+                        'consulta'    : $('textarea[name=consulta]').val()
+                    };
+
+                    // process the form
+                    $.ajax({
+                        type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+                        url         : 'mail.php', // the url where we want to POST
+                        data        : formData, // our data object
+                        dataType    : 'json', // what type of data do we expect back from the server
+                        encode      : true
+                    })
+                        // using the done promise callback
+                        .done(function(data) {
+
+                            // log data to the console so we can see
+                            console.log(data);
+
+
+
+                            // here we will handle errors and validation messages
+                            if ( ! data.success) {
+
+                                // handle errors for name ---------------
+                                if (data.errors.nombre) {
+                                    $('#nombre-group').addClass('has-error'); // add the error class to show red input
+                                    $('#nombre-group').append('<div class="help-block">' + data.errors.nombre + '</div>'); // add the actual error message under our input
+                                }
+                                // handle errors for email ---------------
+                                if (data.errors.mail) {
+                                    $('#mail-group').addClass('has-error'); // add the error class to show red input
+                                    $('#mail-group').append('<div class="help-block">' + data.errors.mail + '</div>'); // add the actual error message under our input
+                                }
+                                // handle errors for email ---------------
+                                if (data.errors.telefono) {
+                                    $('#telefono-group').addClass('has-error'); // add the error class to show red input
+                                    $('#telefono-group').append('<div class="help-block">' + data.errors.telefono + '</div>'); // add the actual error message under our input
+                                }                                // handle errors for superhero alias ---------------
+
+
+                            } else {
+
+                                // ALL GOOD! just show the success message!
+                                $('form').append('<div class="alert alert-success">' + data.message + '</div>');
+
+
+                            }
+
+                        })
+                        .fail(function(data) {
+                  				// show any errors
+                  				// best to remove for production
+                  				console.log(data);
+                  });
+                    $("#form1")[0].reset();
+                    // stop the form from submitting the normal way and refreshing the page
+                    event.preventDefault();
+                });
+
+
 
         });
 
@@ -209,19 +319,12 @@
         var scroll = new SmoothScroll("a[href*='#']",{
 
         });
+
         </script>
 
 
 
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
 </html>
